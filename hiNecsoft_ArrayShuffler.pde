@@ -20,7 +20,6 @@ color [] array_colors = { #FF0000,#FFFF00,#FFFFFF,#FF00FF,#DEAD00};
 
 
 void setup() {
-  size(800, 600);
   arrayShuffler = new ArrayShuffler();
 
   println("Ordered Arrays");
@@ -30,12 +29,15 @@ void setup() {
   println(array_chars);
   println(array_colors);
 
-  println("Shuffled Arrays");
+  // We shuffle the arrays   
   array_ints = arrayShuffler.ints(array_ints);
   array_floats = arrayShuffler.floats(array_floats);
   array_strings = arrayShuffler.strings(array_strings);
   array_chars = arrayShuffler.chars(array_chars);
   array_colors = arrayShuffler.colors(array_colors);
+  
+  
+  println("Shuffled Arrays");
   println(array_ints);
   println(array_floats);
   println(array_strings);
