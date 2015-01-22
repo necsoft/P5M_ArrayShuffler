@@ -162,6 +162,58 @@ class ArrayShuffler {
     // Returns the shuffled array 
     return new_array;
   }
+  
+  File [] files(File [] the_array) {
+    int the_length = the_array.length;
+    File [] new_array = new File[the_length];
+    Boolean [] taken_places = new Boolean[the_length];
+
+    //Set the taken places to false
+    for (int i=0; i<the_length; i++) {
+      taken_places[i] = false;
+    }
+
+    // Iterate the passed array
+    for (int i=0; i<the_length; i++) {
+      int the_index = (int)random(0, the_length);
+      //Check if it's taken
+      while (taken_places[the_index] == true) {
+        the_index = (int)random(0, the_length);
+      }
+      //Shuffle the array
+      new_array[i] = the_array[the_index];
+      //Set this place to taken
+      taken_places[the_index] = true;
+    }
+    // Returns the shuffled array 
+    return new_array;
+  }  
+
+  PImage [] images(PImage [] the_array) {
+    int the_length = the_array.length;
+    PImage [] new_array = new PImage[the_length];
+    Boolean [] taken_places = new Boolean[the_length];
+
+    //Set the taken places to false
+    for (int i=0; i<the_length; i++) {
+      taken_places[i] = false;
+    }
+
+    // Iterate the passed array
+    for (int i=0; i<the_length; i++) {
+      int the_index = (int)random(0, the_length);
+      //Check if it's taken
+      while (taken_places[the_index] == true) {
+        the_index = (int)random(0, the_length);
+      }
+      //Shuffle the array
+      new_array[i] = the_array[the_index];
+      //Set this place to taken
+      taken_places[the_index] = true;
+    }
+    // Returns the shuffled array 
+    return new_array;
+  }  
 
 }
 

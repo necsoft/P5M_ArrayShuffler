@@ -36,9 +36,10 @@ void setup() {
   array_chars = arrayShuffler.chars(array_chars);
   array_colors = arrayShuffler.colors(array_colors);
   
-  
   println("Shuffled Arrays");
   println(array_ints);
   println(array_floats);
   println(array_strings);
+  
+  exit();
 }
