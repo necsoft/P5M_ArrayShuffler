@@ -1,6 +1,6 @@
-class ArrayShuffler {
+class P5M_ArrayShuffler {
 
-  ArrayShuffler() {
+  P5M_ArrayShuffler() {
   }
 
   // Shuffle int

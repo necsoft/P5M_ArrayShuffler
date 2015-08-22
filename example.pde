@@ -1,4 +1,4 @@
-ArrayShuffler arrayShuffler;
+P5M_ArrayShuffler arrayShuffler;
 
 int [] array_ints = {
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10
@@ -20,7 +20,7 @@ color [] array_colors = { #FF0000,#FFFF00,#FFFFFF,#FF00FF,#DEAD00};
 
 
 void setup() {
-  arrayShuffler = new ArrayShuffler();
+  arrayShuffler = new P5M_ArrayShuffler();
 
   println("Ordered Arrays");
   println(array_ints);
